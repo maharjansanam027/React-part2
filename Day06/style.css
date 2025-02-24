@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+#root{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn{
+    background-color: #007bff; /* Blue color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+.btn:hover{
+    background-color: #0056b3;
+}
+
+.para{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    
+}
+
+.logo{
+    position: relative;
+    left: 50px;
+    cursor: pointer;
+}
+
+.but{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color: white;
+    text-decoration: none;
+    font-family: Noto Sans;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.searchbar{
+    width: 400px;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: none;
+}
+
+#card{
+    background-color: rgb(65, 177, 65);
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.content{
+    justify-content: center;
+    margin: 20px;
+}
+
+.price-tag {
+    background-color: #ff9800; /* Orange color */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .price-tag:hover {
+    background-color: #e68900; /* Darker orange */
+  }
+  
+
+  .low-to-high-button {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .low-to-high-button:hover {
+    background-color: #0056b3; /* Darker blue */
+  }
+
+  /* Custom Scrollbar */
+.scroll-container{
+    animation-name: layout;
+    animation-duration: 4s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes layout {
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(-1550px);
+    }
+}
+

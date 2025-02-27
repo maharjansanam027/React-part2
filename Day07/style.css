@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+#root{
+    background-color: antiquewhite;
+    width: 400px;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+button{
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}

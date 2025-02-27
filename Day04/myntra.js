@@ -21,6 +21,10 @@ function App(){
         A.sort((a,b)=>b.price - a.price);
         setA([...A]);
       }
+      function priceAbove(){
+        const B = A.filter((val)=>val.price>10000)
+        setA([...B])
+      }
     return(
         <>
             <Header/>
@@ -29,6 +33,7 @@ function App(){
             <div style={{display:'flex',justifyContent:'center',gap:"10px",padding:"20px"}}>
                 <button className='low-to-high-button' onClick={sortArray}>Price Low to High</button>
                  <button className='low-to-high-button' onClick={highToLow}>Price High to Low</button>
+                 <button className='low-to-high-button' onClick={priceAbove}>Price 10k+</button>
             </div>
             <div className="content" style={{display:"flex", gap:"10px", flexWrap:"wrap"}}>
                 {/* it should return array or number or string jsx will expext result but not object 

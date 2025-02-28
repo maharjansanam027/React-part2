@@ -25,4 +25,4 @@ const Colorful = () => {
     )
 }
 
-export default Colorful
+export default React.memo(Colorful)

@@ -33,3 +33,8 @@ if there is any DOM manipulation type is there means we have to in useEffect hoo
 
 we cannot leave as it is how we will write in js Dom manipulation code.. this is also one of the advantage of react.
 react says DOM manipulation will handle by itself
+
+
+when the usestate fucntion will call then once again function will executed if there is another children function call then it will also execute. but if we dont want to execute that funciton then there is one more hook 
+
+in export defeaut use React.memo(functionname);

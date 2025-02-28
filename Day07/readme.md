@@ -27,3 +27,9 @@ for non primitive datatypes it will check the object reference if it is not chan
 if the state is change means our component will render. 
 
 
+useEffect is the special hooks which is executed in at last.
+
+if there is any DOM manipulation type is there means we have to in useEffect hooks.
+
+we cannot leave as it is how we will write in js Dom manipulation code.. this is also one of the advantage of react.
+react says DOM manipulation will handle by itself

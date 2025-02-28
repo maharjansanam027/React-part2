@@ -1,26 +1,20 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ReactDOM from 'react-dom/client'
+import Colorful from './src/Component/Colorful'
 
 
 function Main(){
 
-    const [color,setColor]=useState("black");
-
-    console.log("render");
-
-    document.body.style.backgroundColor = color;
+    const [count,setCount] =  useState(0);
     return(
         <>
-            <h1>Background Color Changer</h1>
-            <div className="but">
-                <button style={{backgroundColor:"red"}} onClick={()=>setColor("red")}>Red</button>
-                <button style={{backgroundColor:"blue"}} onClick={()=>setColor("blue")}>Blue</button>
-                <button style={{backgroundColor:"green"}} onClick={()=>setColor("green")}>Green</button>
-                <button style={{backgroundColor:"pink"}}>Pink</button>
-                <button style={{backgroundColor:"orange"}}>orange</button>
-            </div>
+        <div className="counter">
+            <h2>Counter : {count}</h2>
+            <button onClick={()=>setCount(count+1)} style={{backgroundColor:"blue",width:"100px"}}>Increment {count}</button>
+        </div>
+        <Colorful/>
         </>
-    )
+    )  
 }
 
 

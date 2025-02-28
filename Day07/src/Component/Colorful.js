@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 
-const Colorful = ({name}) => {
+const Colorful = () => {
     const [color,setColor]=useState("black");
 
     console.log("render");
@@ -15,7 +15,6 @@ const Colorful = ({name}) => {
 
     return(
         <>
-            {name}
             <h1>Background Color Changer</h1>
             <div className="but">
                 <button style={{backgroundColor:"red"}} onClick={()=>setColor("red")}>Red</button>

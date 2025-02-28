@@ -38,3 +38,9 @@ react says DOM manipulation will handle by itself
 when the usestate fucntion will call then once again function will executed if there is another children function call then it will also execute. but if we dont want to execute that funciton then there is one more hook 
 
 in export defeaut use React.memo(functionname);
+
+everytime we will not use this memo hooks because it has also some portion of code. it will take more memory.
+
+Advantage of memo hooks
+if there is children using this hooks then if it has props then if the props is change then it will allowed to execute.
+
